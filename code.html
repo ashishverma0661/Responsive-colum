@@ -3,58 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body class="b1">
-    <div class="container1">
-        <p><b>website source</b>:- https://html5up.net/dimension</p>
-        <h1><u>Intro</u></h1>
-        <img class="responsive-img" src="https://html5up.net/uploads/demos/dimension/images/pic01.jpg">
-    
-        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <u>awesome work.</u></p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-    </div>
-    
-</body>
-</html>
+    <title>Responsive Section</title>
 
 <style>
-    
-    .b1{
-        padding: 60px 0;
-        background-image: url(https://static.vecteezy.com/system/resources/previews/023/464/642/large_2x/tourist-in-mountain-peak-sunset-black-shadow-active-life-concept-ai-generated-photo.jpg)
-
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-.container1{
-    background-color: rgba(27, 31, 34, 0.85);
-    width: 50%;
-    margin: 0 auto;
-    align-items: center;
-    padding: 40px;
-    border-radius: 4px;
-}
+    body {
+        font-family: "Source Sans Pro", sans-serif;
+        background: #000;
+    }
 
-h1{
-    color: #fff;
-  
-}
+    section {
+        padding: 60px 20px;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/023/464/642/large_2x/tourist-in-mountain-peak-sunset-black-shadow-active-life-concept-ai-generated-photo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 
-p{
-    background-color: red;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    margin-top: 30px;
-}
+    .container {
+        background: rgba(0, 0, 0, 0.862);
+        width: 100%;
+        max-width: 750px;
+        margin: auto;
+        padding: 40px;
+        border-radius: 6px;
+    }
 
-.responsive-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    /* display: block;        optional: removes small gaps under image */
-    /* margin-bottom: 20px;   optional: adds space below image */
-}
+    .container h1 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
 
+    .container p {
+        color: #fff;
+        line-height: 1.6;
+        margin-top: 15px;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 20px 0;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+        .container {
+            padding: 20px;
+        }
+
+        .container h1 {
+            font-size: 22px;
+        }
+
+        .container p {
+            font-size: 15px;
+        }
+    }
 </style>
+
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <p><b>Website source :</b> https://html5up.net/dimension</p>
+
+        <h1><u>Intro</u></h1>
+
+        <img src="https://html5up.net/uploads/demos/dimension/images/pic01.jpg">
+
+        <p>
+            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue...
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
