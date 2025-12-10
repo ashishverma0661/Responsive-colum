@@ -1,13 +1,16 @@
+
+<!-- ----------------------------------------------------------- -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Landing Page</title>
-  <link rel="icon" type="image/x-icon" href="Test images/favicon.ico">
 
   <style>
-    * {
+    /* Global Reset (star target all element) */
+    * {                        
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -17,17 +20,19 @@
       font-family: Arial, sans-serif;
       background: #f5f5f5;
       color: #333;
+      line-height: 1.5;
     }
 
+    /* HERO SECTION (Dark) */
     .hero {
       background-color: #222;
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 80px 20px;
     }
 
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 10px;
     }
 
@@ -37,43 +42,84 @@
     }
 
     .hero button {
-      background-color: #ff6600;
-      color: white;
+      background: linear-gradient(90deg, red, yellow, orange);;
+      color: #000;
       border: none;
-      padding: 15px 30px;
+      padding: 15px 35px;
       font-size: 1rem;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
     }
 
+    /* FEATURES SECTION (Light boxes) */
     .features {
       display: flex;
-      justify-content: space-around;
-      padding: 40px 20px;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 20px;
+      padding: 50px 20px;
       background: #fff;
     }
 
     .feature-box {
       width: 250px;
-      margin: 15px;
-      padding: 20px;
       background: #eee;
+      padding: 20px;
       border-radius: 8px;
       text-align: center;
     }
 
-    .feature-box h3 {
-      margin-bottom: 10px;
+    /* ---------------- SECOND HERO --------------- */
+
+    .hero1 {
+      background: #222;
+      padding: 70px 20px;
+      text-align: center;
+      color: #fff;
     }
 
-    @media (max-width: 768px) {
-      .features {
-        flex-direction: column;
-        align-items: center;
-      }
+    .hero1 h1 {
+      font-size: 2.8rem;
+    }
 
-      .hero h1 {
+    .hero1 h2 {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin: 15px 0;
+      color: #ff4a4a;
+    }
+
+    .hero1 button {
+      padding: 12px 50px;
+      background: linear-gradient(90deg, red, yellow, orange);
+      color: #000;
+      border: none;
+      border-radius: 20px 0;
+      cursor: pointer;
+    }
+
+    /* ---------------- SECOND FEATURES --------------- */
+
+    .features1 {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .feature-box1 {
+      background: rgb(161, 202, 161);
+      padding: 20px;
+      width: 250px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero h1,
+      .hero1 h1 {
         font-size: 2rem;
       }
 
@@ -81,93 +127,44 @@
         font-size: 1rem;
       }
     }
-/* -------------end------------ */
-
-.hero1{
-  background-color: #222;
-  padding: 80px 20px;
-  text-align: center;
-  color: #fff;
-
-}
-.hero1 h1{
-  font-size: 50px;
-  line-height: 1.2;
-}
-.hero1 p{
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-.hero1 h2{
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: red;
-  margin-bottom: 20px;
-
-}
-
-.feature-box1 p{
-  margin-top: 10px;
-}
-
-button{
-  padding: 15px 60px;
-  background: #ff0000;
-  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(206, 209, 25, 1) 50%, rgba(237, 132, 83, 1) 100%);
-  border-radius: 20px 0;
-}
-
-.features1{
-  padding: 40px 30px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.feature-box1{
-  background-color: rgb(161, 202, 161);
-  padding: 20px;
-  border-radius: 12px;
-  margin: 15px;
-  text-align: center;
-}
-
   </style>
 </head>
+
 <body>
 
+  <!-- HERO SECTION 1 -->
   <section class="hero">
     <h1>SmartGadget X</h1>
     <p>Smart. Fast. Powerful.</p>
     <button>Buy Now</button>
   </section>
 
+  <!-- FEATURES 1 -->
   <section class="features">
     <div class="feature-box">
       <h3>✅ Fast Performance</h3>
       <p>Runs super smooth and lightning fast!</p>
     </div>
+
     <div class="feature-box">
       <h3>✅ Long Battery</h3>
       <p>Lasts up to 48 hours on a single charge.</p>
     </div>
+
     <div class="feature-box">
       <h3>✅ Sleek Design</h3>
       <p>Modern and elegant to match your style.</p>
     </div>
   </section>
 
-  <!-- /* -------------end------------ */ -->
-
-
+  <!-- HERO SECTION 2 -->
   <section class="hero1">
-<h1>SmartGadget X</h1>
-<h2>Smart. Fast. Powerful. </h2>
-<button>Buy Now</button>
+    <h1>SmartGadget X</h1>
+    <h2>Smart. Fast. Powerful.</h2>
+    <button>Buy Now</button>
   </section>
 
+  <!-- FEATURES 2 -->
   <section class="features1">
     <div class="feature-box1">
       <h3>✅ Fast Performance</h3>
@@ -175,15 +172,14 @@ button{
     </div>
 
     <div class="feature-box1">
-      <h3>✅ Fast Performance</h3>
-      <p>Runs super smooth and lightning fast!</p>
+      <h3>✅ High Quality</h3>
+      <p>Modern build with solid durability.</p>
     </div>
 
     <div class="feature-box1">
-      <h3>✅ Fast Performance</h3>
-      <p>Runs super smooth and lightning fast!</p>
+      <h3>✅ Premium Look</h3>
+      <p>Spotted design with glossy finish.</p>
     </div>
-
   </section>
 
 </body>
